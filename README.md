@@ -9,3 +9,11 @@ function returnAverage(students) {
   const media = sum / students.length;
   return media;
 }
+
+================================================
+
+for ( usuario of usuarios ){                                                         // varrer todos os usuários 
+    console.log(` ${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)   // .join junta os valores do array! 
+}
+
+=================================================
