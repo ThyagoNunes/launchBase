@@ -1,24 +1,17 @@
-const usuarios = [
-  { nome: "Thyago", tecnologias: ["javaScript", "node Js", "CSS"] },
-  { nome: "Marcela", tecnologias: ["C", "HTML", "JavaScript"] },
-  { nome: "Fulano", tecnologias: ["ruby", "php", "spring"] },
+const usuarios =  [ 
+    { nome: 'thyago', tecnologias: ['JavaScript','nodeJs','react','react native','css','html']},
+    { nome: 'marcela', tecnologias: ['JavaScript','nodeJs','react','react native','html']},
+    { nome: 'fulano', tecnologias: ['JavaScript','nodeJs','react','react native','css','html']}
 ];
 
-function checaSeUsuarioUsaCSS(usuarios) {
-    for (tecnologia of usuarios.tecnologias) {
-      if (tecnologia == "CSS") return true;
+function checaSeUsuarioUsaCSS (usuarios){
+    for(tecnologia of usuarios.tecnologias){
+        if(tecnologia == 'css') return true;
     }
     return false;
-  }
-
-  
-for (let i = 0; i < usuarios.length; i++) {
-  const usuarioUsaCSS = checaSeUsuarioUsaCSS(usuarios[i]);
-  if(usuarioUsaCSS){            // true
-      console.log(`${usuarios[i].nome}`);
-  }
-  else{                         // false
-      console.log('não manja de css')
-  }
 }
 
+for ( let i = 0 ; i < usuarios.length ; i++ ) { 
+    const usuarioUsaTecnologia = checaSeUsuarioUsaCSS(usuarios[i]);
+    if(usuarioUsaTecnologia) console.log(`${usuarios[i].nome} usa CSS`);
+}
