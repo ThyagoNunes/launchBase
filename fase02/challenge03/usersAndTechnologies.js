@@ -4,6 +4,6 @@ const usuarios = [
     { nome: 'Fulano', tecnologias: ['ruby','php'], },
 ];
 
-for ( usuario of usuarios ){
+for ( let usuario of usuarios ){
     console.log(` ${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
 }

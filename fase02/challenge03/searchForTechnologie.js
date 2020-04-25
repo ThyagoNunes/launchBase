@@ -1,17 +1,20 @@
-const usuarios =  [ 
-    { nome: 'thyago', tecnologias: ['JavaScript','nodeJs','react','react native','css','html']},
-    { nome: 'marcela', tecnologias: ['JavaScript','nodeJs','react','react native','html']},
-    { nome: 'fulano', tecnologias: ['JavaScript','nodeJs','react','react native','css','html']}
+const users =  [ 
+    { name: 'thyago', tecnologies: ['JavaScript','nodeJs','react','react native','css','html']},
+    { name: 'marcela', tecnologies: ['JavaScript','nodeJs','react','react native','html']},
+    { name: 'fulano', tecnologies: ['JavaScript','nodeJs','react','react native','css','html']}
 ];
 
-function checaSeUsuarioUsaCSS (usuarios){
-    for(tecnologia of usuarios.tecnologias){
-        if(tecnologia == 'css') return true;
+// ► Check all users and return TRUE IF condition to satisfy OR FALSE case this condition not satisfy ►
+function checkUserUseTecnologie ( users ) {                 
+    for( let tencologie of users.tecnologies ) {
+        if( tencologie == 'css') return true;
     }
     return false;
 }
 
-for ( let i = 0 ; i < usuarios.length ; i++ ) { 
-    const usuarioUsaTecnologia = checaSeUsuarioUsaCSS(usuarios[i]);
-    if(usuarioUsaTecnologia) console.log(`${usuarios[i].nome} usa CSS`);
+for ( let i = 0 ; i < users.length; i++){
+    const checkUser = checkUserUseTecnologie(users[i])
+        if(checkUser){
+            console.log(`${users[i].name} use tecnologie`)
+    }
 }
