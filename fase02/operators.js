@@ -12,18 +12,17 @@
     
 ========================================================================*/
 
-
 // DESAFIO 1
 const idade = 17;
 // Verificar se a pessoa é maior igual a 18 anos
 // se sim, deixar entrar, se não, bloquear a entrada
-// se a pessoa tiver 17 anos 
+// se a pessoa tiver 17 anos
 // avisar pra voltar quando tier 18
 
-if(!(idade >=18) || idade === 17) {
-    console.log('Bloquear a entrada');
-}else{
-    console.log('Deixar entrar');
+if (!(idade >= 18) || idade === 17) {
+  console.log("Bloquear a entrada");
+} else {
+  console.log("Deixar entrar");
 }
 
 /*======================================================================== 
@@ -37,20 +36,18 @@ if(!(idade >=18) || idade === 17) {
 
 ========================================================================*/
 
-console.log(5 == 5 && 6 == 6);       // true
-console.log(5 == 5 && 6 != 6);       // false
+console.log(5 == 5 && 6 == 6); // true
+console.log(5 == 5 && 6 != 6); // false
 
-console.log(5 != 5 || 6 == 6);       // true
-console.log(5 == 5 || 6 != 6);       // true
-    
-console.log(!(5>6));                 // true
-console.log(!(5<6));                 // false
+console.log(5 != 5 || 6 == 6); // true
+console.log(5 == 5 || 6 != 6); // true
 
+console.log(!(5 > 6)); // true
+console.log(!(5 < 6)); // false
 
 // dar bonificação de 500 reais
 // se vendedor possuir 100 ou menos pontos
 // m as deve possuir mais de 50 pontos
-
 
 /*======================================================================== 
     OPERADORES DE ARITMÉTICOS
@@ -63,8 +60,8 @@ console.log(!(5<6));                 // false
 
 ========================================================================*/
 
-console.log( 2 * 2 ) // 4
-console.log( 2 / 2 ) // 1
-console.log( 2 % 1.5 ) // 0.5
-console.log( 2 + 2 ) // 4
-console.log( 2 - 2 ) // 0
+console.log(2 * 2); // 4
+console.log(2 / 2); // 1
+console.log(2 % 1.5); // 0.5
+console.log(2 + 2); // 4
+console.log(2 - 2); // 0
