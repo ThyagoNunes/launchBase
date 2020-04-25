@@ -2,38 +2,20 @@
 // das turmas de alunos e envia
 // mensagem do cálculo da média
 const studentsClassA = [
-  {
-    nome: "a",
-    note: 10,
-  },
-
-  {
-    nome: "b",
-    note: 9,
-  },
-
-  {
-    nome: "c",
-    note: 8,
-  },
-];
+  { name: 'thyago', note: 10},
+  { name: 'marcela', note: 8},
+]
 
 const studentsClassB = [
-  {
-    nome: "d",
-    note: 5,
-  },
+  { name: 'arrom', note: 10},
+  { name: 'zezinho', note: 8},
+  { name: 'fulaninho', note: 1},
+  { name: 'siclaninho', note: 1},
+  { name: 'juninho', note: 1},
+]
 
-  {
-    nome: "f",
-    note: 4,
-  },
-
-  {
-    nome: "g",
-    note: 3,
-  },
-];
+console.table(studentsClassA);
+console.table(studentsClassB);
 
 function returnAverage(students) {
   let sum = 0;
@@ -46,11 +28,10 @@ function returnAverage(students) {
 
 const averageClassA = returnAverage(studentsClassA);
 sendMessage(averageClassA, "class A");
-/* console.log(averageClassA); */
 
 const averageClassB = returnAverage(studentsClassB);
 sendMessage(averageClassB, "class B");
-/* console.log(averageClassB); */
+
 
 function sendMessage(average, averageClass) {
   if (average >= 5) {
