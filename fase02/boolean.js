@@ -21,7 +21,7 @@ function classMedia(students) {
   // ► make sum notes and return media class ►
   let sum = 0;
   for (let i = 0; i < students.length; i++) {
-    sum += students[i].note;  
+    sum += students[i].note;
   }
   const media = sum / students.length;
   return media;
