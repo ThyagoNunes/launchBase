@@ -9,4 +9,3 @@ for (let usuario of usuarios) {
     ` ${usuario.nome} trabalha com ${usuario.tecnologias.join(", ")}`
   );
 }
-
