@@ -127,10 +127,10 @@ body {
   font-size: 18px;
   line-height: 28px;
   margin: 0 16px;
-  text-decoration: none;
   position: absolute;
   margin-top: -815px;
-  margin-left: 400px;
+  margin-left: 200px;
+  max-width: 130px;
 }
 
 .links a#return:hover{
