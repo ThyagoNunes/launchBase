@@ -1,0 +1,161 @@
+/* =============================ABAIXO É O CSS ABOUT ME===================================== */
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+:root {
+  --color-green: #50fa7b;
+  --color-purple: #7159c1;
+}
+
+* {
+  /* resetar eepaçamenmto ALL PAGEA  */
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: #282a36;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* =============== WRAPPER ============== */
+
+#wrapper {
+  text-align: center;
+  padding: 30px;
+}
+
+#wrapper img {
+  border-radius: 50%;
+  border-bottom: 5px solid rgb(199, 193, 193);
+  margin-bottom: 50px;
+  margin-top: 50px;
+  height: 250px;
+}
+
+#wrapper h1 {
+  padding-bottom: 30px;
+  /*   text-decoration: underline var(--color-green); */
+}
+
+#wrapper h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.8;
+  /*   text-decoration: underline var(--color-green); */
+  padding-bottom: 10px;
+}
+
+#wrapper p {
+  max-width: 500px;
+  margin: 32px auto;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 0px;
+}
+
+#wrapper p a {
+  color: rgb(199, 193, 193);
+}
+
+#wrapper p a:hover {
+  color: var(--color-green);
+  transition: 500ms;
+}
+
+/* =============== LINKS FOOTER ============== */
+
+.links {
+  text-align: center;
+  padding: 10px;
+}
+
+.links a {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--color-green);
+  transition: color 200ms;
+}
+
+#links-footer a {
+  border-bottom: 1px solid var(--color-green);
+}
+
+/* ============= CARDS ============== */
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid; /* coluns */
+  grid-template-columns: 1fr 1fr 1fr; /* quantify coluns */
+  gap: 20px; /* spacing between coluns */
+}
+
+.card {
+  background-color: var(--color-purple);
+}
+
+.card_image-container img {
+  width: 100%;
+}
+
+.card_content,
+.card_info {
+  padding: 24px;
+}
+
+.card_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card_price {
+  background-color: var(--color-purple);
+  filter: brightness(90%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* =========== MODAL ============ */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%; /* 100% largura */
+  height: 100%; /* 100% comprimento */
+  position: fixed; /* position fixed in display */
+  top: 50px;
+  opacity: 0; /* no spacing in top */
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative; /*  "father " area for heritage */
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute; /* "son" receive position absolut in relation for heritage in position relative */
+  right: 8px;
+  top: 8px;
+  cursor: pointer; /* change for a hand   */
+}
+
+/* ========== MODAL.ACTIVE ============ */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
