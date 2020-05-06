@@ -1,0 +1,139 @@
+/* =============================ABAIXO É O CSS ABOUT ME===================================== */
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+:root {
+  --color-green: #50fa7b;
+}
+
+* {
+  /* resetar eepaçamenmto  */
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: #282a36;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+#wrapper img {
+  border-radius: 6%;
+  border-bottom: 5px solid rgb(199, 193, 193);
+  margin-bottom: 50px;
+  margin-top: 50px;
+  height: 200px;
+}
+
+#wrapper {
+  text-align: center;
+  padding: 30px;
+}
+
+#wrapper h1.titleCompany {
+  color: rgb(199, 193, 193);
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: bold;
+  text-decoration: underline var(--color-green);
+
+  padding-bottom: 15px;
+}
+
+#wrapper h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.8;
+  text-decoration: underline var(--color-green);
+}
+
+#wrapper p {
+  max-width: 500px;
+  margin: 32px auto;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 0px;
+}
+#wrapper p a {
+  color: rgb(199, 193, 193);
+}
+
+#wrapper p a:hover {
+  color: var(--color-green);
+  transition: 500ms;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: rgb(199, 193, 193);
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  margin: 30px 0 15px 0;
+  text-decoration: underline var(--color-green);
+}
+
+#footer {
+  text-align: center; 
+  margin-bottom: 100px;
+  color: var(--color-green);
+  }
+
+#footer #ico img{
+  padding: 0 5px;
+  margin: 0 2px;
+  border-bottom: 4px solid var(--color-green);
+  border-radius: 50px;
+}
+
+#ico img:hover{
+  color: white;
+  opacity: 0.7;
+  transition: 100ms;
+}
+
+#ico img {
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--color-green);
+  transition: color 200ms;
+}
+
+#links-footer a {
+  border-bottom: 1px solid var(--color-green);
+}
+
+.links a#return{
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  position: absolute;
+  margin-top: -815px;
+  margin-left: 200px;
+  max-width: 130px;
+}
+
+.links a#return:hover{
+  color: var(--color-green);
+  transition: color 200ms;
+}
