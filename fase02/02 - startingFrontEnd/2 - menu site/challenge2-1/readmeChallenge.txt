@@ -2,6 +2,7 @@ Desafio 2-1: Primeiro HTML
 “Sua única limitação é você mesmo!”
 
 
+
 🚀 Sobre o desafio
 Criar um arquivo html que contenha um favicon e um header com 3 links: Comunidade, Email e Telefone.
 
