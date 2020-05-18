@@ -5,28 +5,26 @@ const server = express();
 
 server.use(express.static("public"));       /* CSS */
 
-server.set("view engine", "html");          /* ENGINE FOR HTML */
+server.set("view engine", "njk");          /* SET ENGINE FOR HTML */
 
 nunjucks.configure("views", {               /* CONFIGURE NUNJUCKS */
-  express: server,
+  express: server
 });
 
 server.get("/", function (req, res) {
-  return res.render("index");               /* RENDER INDEX */
-});
-
-server.get("/about", function (req, res) {
-  return res.render("about");
+  return res.render("about");               /* RENDER INDEX */
 });
 
 server.get("/portfolio", function (req, res) {
   return res.render("portfolio");
 });
 
+
+server.listen(5000, function () {
+  console.log("Server is running");
+});
+
+
 /* server.get('/root', function(req, res) {
     return res.send("Hello Mr. Robot")
 }) */
-
-server.listen(3333, function () {
-  console.log("Server is running");
-});
