@@ -58,5 +58,4 @@ checkStatusStudents(classA);
 checkStatusStudents(classAB);
 
 console.table(classA);
-
 console.table(classAB);

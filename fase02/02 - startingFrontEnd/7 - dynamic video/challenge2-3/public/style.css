@@ -222,20 +222,29 @@ header {
     visibility: hidden;
 }
 
-/* .modal {
-    width: 100%;
-    height: 95%;
+.modal {
+    width: 90%;
+    height: 90%;
     background-color: white;
     position: relative;
+    margin: 0 auto;
     top: 5vh;
-} */
+} 
 
 .close-modal { 
     position: absolute;
     right: 8px;
     top: 8px;
     cursor: pointer;
-    color: white;
+    color: black;
+}
+
+.maximize-modal { 
+    position: absolute;
+    right: 45px;
+    top: 12px;
+    cursor: pointer;
+    color: black;
 }
 
 /* ====================     MODAL ACTIVE     ==================== */
@@ -245,11 +254,17 @@ header {
     visibility: visible;
 }
 
+.modal-overlay.maximize {
+    opacity: 1;
+    visibility: hidden;
+}
+
 /* ====================     IFRAME     ==================== */
 
 .video-content iframe { 
     width: 100%;
-    height: 100%;
-    top: 3.5%;
+    height: 95%;
+    top: 4%;
+    margin: 0 auto;
     position: absolute;
 }
