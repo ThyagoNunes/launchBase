@@ -154,12 +154,28 @@ body {
   cursor: pointer; /* change for a hand   */
 }
 
+.maximize-modal { 
+    position: absolute;
+    right: 45px;
+    top: 12px;
+    cursor: pointer;
+    color: black;
+}
+
 /* ========== MODAL.ACTIVE ============ */
 
 .modal-overlay.active {
   opacity: 1;                 /* transparent of embed video */
   visibility: visible;
 }
+
+.modal-overlay.maximize {
+    opacity: 1;
+    visibility: hidden;
+}
+
+/* ====================     IFRAME     ==================== */
+
   
 iframe{
   width: 100%;
