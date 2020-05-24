@@ -215,56 +215,85 @@ header {
 .modal-overlay {
     width: 100%;
     height: 100%;
-    background: black;
+    background: white;
     position: fixed;
-    top: 0;
+    top: 0%;
+    left: 0%;
     opacity: 0;
     visibility: hidden;
 }
 
 .modal {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    top: 0%;
     background-color: white;
     position: relative;
-    margin: 0 auto;
-    top: 5vh;
-} 
+}
+
+/* ====================     BUTTONS     ==================== */
 
 .close-modal { 
     position: absolute;
     right: 8px;
-    top: 8px;
+    top: 0px;
     cursor: pointer;
-    color: black;
+    color: black0;
 }
 
 .maximize-modal { 
     position: absolute;
-    right: 45px;
-    top: 12px;
+    right: 40px;
+    top: 4px;
     cursor: pointer;
-    color: black;
+    color: rgb(0, 0, 0);
 }
+
 
 /* ====================     MODAL ACTIVE     ==================== */
 
 .modal-overlay.active {
+    width: 50%;
+    height: 65%;
+    background: white;
+    position: fixed;
+    top: 18%;
+    left: 25%;
     opacity: 1;
     visibility: visible;
 }
 
+/* ====================     MODAL MAXIMIZE     ==================== */
+
 .modal-overlay.maximize {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0%;
+    left: 0%;
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
+}
+
+/* ====================     MODAL MINIMIZE     ==================== */
+
+.modal-overlay.minimize {
+    width: 50%;
+    height: 65%;
+    background: white;
+    position: fixed;
+    top: 18%;
+    left: 25%;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ====================     IFRAME     ==================== */
 
 .video-content iframe { 
     width: 100%;
-    height: 95%;
-    top: 4%;
-    margin: 0 auto;
+    height: 97%;
+    top: 3.5%;
     position: absolute;
 }
