@@ -250,10 +250,7 @@ header {
     top: 7px;
     cursor: pointer;
     color: rgb(0, 0, 0);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border: 1px solid black ;
 
 }
 
