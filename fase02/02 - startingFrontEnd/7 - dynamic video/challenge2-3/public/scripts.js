@@ -12,13 +12,11 @@ for (let card of cards) {
                 modalOverlay.classList.add('active');
                 modalOverlay.classList.add('maximize'); 
             })
-        }
-
-/*         if(modalOverlay.classList.contains('maximize') == true){
-            document.querySelector('.maximize-modal').addEventListener('click', function(){
-                modalOverlay.classList.remove('maximize');
+            document.querySelector('.minimize-modal').addEventListener('click', function(){
+                modalOverlay.classList.add('active');
+                modalOverlay.classList.add('minimize'); 
             })
-        } */
+        }
 
 
         modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${videoId}`
@@ -36,4 +34,9 @@ document.querySelector('.maximize-modal').addEventListener('click',function(){
     modalOverlay.classList.remove('maximize');
     modalOverlay.classList.remove('minimize');
 })
+
+document.querySelector('.minimize-modal').addEventListener('click',function(){
+    modalOverlay.classList.remove('minimize');
+})
+
 

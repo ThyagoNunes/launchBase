@@ -249,6 +249,13 @@ header {
     color: rgb(0, 0, 0);
 }
 
+.minimize-modal { 
+    position: absolute;
+    right: 80px;
+    top: 0x;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
 
 /* ====================     MODAL ACTIVE     ==================== */
 
@@ -280,11 +287,11 @@ header {
 
 .modal-overlay.minimize {
     width: 50%;
-    height: 65%;
+    height: 100%;
     background: white;
     position: fixed;
-    top: 18%;
-    left: 25%;
+    top: 0%;
+    left: 0%;
     opacity: 1;
     visibility: visible;
 }
