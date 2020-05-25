@@ -25,6 +25,3 @@ server.listen(5000, function () {
 });
 
 
-/* server.get('/root', function(req, res) {
-    return res.send("Hello Mr. Robot")
-}) */
