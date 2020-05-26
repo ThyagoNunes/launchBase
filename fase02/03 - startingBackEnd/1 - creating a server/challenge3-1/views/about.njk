@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<head>
-    <title>thyago - webpage</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Content - Rocketseat</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
     <h1>Courses</h1>
 
     <section class="cards">
@@ -88,11 +89,10 @@
 
     </div>
 
-    <script src="script.js"></script>
-
     <div class="footer">
     
     </div>
 
-</body>
-</html>
+    <script src="script.js"></script>
+
+{% endblock %}
