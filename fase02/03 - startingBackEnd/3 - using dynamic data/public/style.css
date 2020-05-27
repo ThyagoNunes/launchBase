@@ -8,85 +8,85 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	background-color: whitesmoke;
+	background-color: #1f2633;
 	color: black;
 }
 
 
-header {
-	min-height: 100px;
-	max-width: 0px;
-	filter: brightness(95%);
-	margin: auto;
-	padding: 0;
-	margin: 0;
-	top: 25px;
-	position: absolute;
-	left: 41.5%;
-}
-
-
-
-.links_page {
-	width: 320px;
-	margin: 0 auto;
-	text-align: center;
+.link_page {
+	width: 250px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-    top: 15px;
+	gap: 10px;
+	padding: 0;
+	margin: 0 auto;
+	top: 25px;
+	position: relative;
+
 }
 
-.links_page a {
+.link_page a {
 	border: 3px solid black;
-	padding: 5px;
+	padding: 10px;
 	text-decoration: none;
 	position: relative;
 	border-radius: 10px;
 	text-align: center;
 	color: black;
     font-weight: 900;
-    background-color: white;
+	background-color: white;
+
     
 }
 
-.links_page a:hover {
-	color: black;
+.link_page a:hover {
+	color: white;
 	transition: color 200ms;
-	background: grey;
+	background-color: grey;
+	border: 3px solid black;
 	font-weight: 900;
 	transition: 400ms;
+	filter: contrast(200%);
 }
-
 #wrapper {
-	text-align: center;
+	height: 500px;
 	padding: 32px;
-
+	top: 150px;
+	position: relative;
+	width: 350px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #wrapper img {
 	border-radius: 50%;
 	width: 220px;
-	border: 2px solid grey;
-	top: 150px;
+	text-align: center;
 	position: relative;
-	border: 4px solid black;
-
+	border: 4px solid white;
 }
 
 #wrapper h1 {
 	font-size: 35px;
-	font-weight: 900;
-	top: 180px;
+	top: 80px;
 	position: relative;
+	color: whitesmoke;
 }
 
 #wrapper p {
 	font-size: 28px;
-	font-weight: 600;
-	opacity: 0.75;	
-	top: 200px;
+	top: 120px;
 	position: relative;
+	color: whitesmoke;
+}
+
+#wrapper p.desc {
+	width: 350px;
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	top: 150px;
+	font-style: italic;
 }
 
 
@@ -102,7 +102,7 @@ div.links_social_midia {
 }
 
 .links_social_midia img {
-    width: 70px;
+    width: 50px;
     margin: 0 auto;
     text-align: center;
     background: white;
@@ -112,7 +112,12 @@ div.links_social_midia {
 .links_social_midia img:hover {
     background: grey;
     border-radius: 100px;
-    filter: brightness(120%);
+	filter: brightness(120%);
+	transition: 500ms;
+	position: relative;
+	width: 60px;
+	top: -10px;
+
 }
 
 .links_social_midia a {
@@ -122,8 +127,9 @@ div.links_social_midia {
 .footer { 
     width: auto;
     text-align: center;
-    top: 420px;
-    position: relative;
+    top: 300px;
+	position: relative;
+	color: white;
 }
 
 
@@ -336,6 +342,7 @@ div.links_page_video {
 	width: 100%;
 	background: white;
 	border-radius: 10%;
+	display: grid;
 	
 }
 
@@ -389,6 +396,7 @@ div.links_page_video {
 .card_info {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
 
 .card_time {
