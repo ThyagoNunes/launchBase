@@ -7,25 +7,25 @@
 {% block content %}
 
     <div id="wrapper" class="video">
-        <h1 class="titleVideo">{{item.titleVideo}}</h1>
+        <h1 class="titleVideo">{{videos.titleVideo}}</h1>
     </div>	
 
 	<section class="video">
     
-        <div class="card" id="{{item.id}}">
+        <div class="card" id="{{videos.id}}">
             <div class="card_video_container" >
-				<iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
+				<iframe src="https://www.youtube.com/embed/{{videos.id}}" frameborder="0"></iframe>
 
 
             </div>
 
             <div class="card_content">
-                <p>{{item.titleVideo}}</p>
+                <p>{{videos.titleVideo}}</p>
             </div>
 
             <div class="card_info">
-                <p class="card_time">{{item.duration}}</p>
-                <p class="card_price">{{item.feeling}}</p>
+                <p class="card_time">{{videos.duration}}</p>
+                <p class="card_price">{{videos.feeling}}</p>
             </div>
 
         </div>

@@ -2,8 +2,9 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 
 const server = express();
-const videos = require("./data")
+const videos = require("./videos")
 const about = require('./about')
+const portfolios = require('./portfolios')
 
 server.use(express.static("public"));      
 server.set("view engine", "njk");          
@@ -19,7 +20,7 @@ server.get("/", function (req, res) {
 });
 
 server.get("/portfolio", function (req, res) {
-  return res.render("portfolio", { items: videos });
+  return res.render("portfolio", { portfolios });
 });
 
 server.get("/video", function(req, res){
@@ -33,7 +34,7 @@ server.get("/video", function(req, res){
     return res.send("Video not found")
   }
 
-  return res.render("video", { item: video })
+  return res.render("video", { videos: video })
 })
 
 
