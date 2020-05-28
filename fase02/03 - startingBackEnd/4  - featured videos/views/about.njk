@@ -1,0 +1,30 @@
+	{% extends "layout.njk" %}
+
+	{% block head %}
+		<title>Sobre - Thyago Nunes</title>
+	{% endblock %}
+
+	{% block content %}
+	
+	<div id="wrapper">
+		<img src="{{ about.avatar_url }}" alt="Imagem de {{ about.name }}">
+		<h1>{{ about.name }}</h1>
+		<p>{{ about.role }}</p>
+		<p class="desc">{{ about.description }} 🚀</p>
+	</div>
+
+	<div class="links_social_midia">
+
+		{% for link in about.links %}
+			<a href="{{link.url}}"target="_blank">
+				<img src="{{link.dir}}" class="media-object img-responsive img-thumbnail">
+			</a>
+		{% endfor %}
+		
+	</div>
+		
+	<div class="footer">
+		<p>© 2020 Thyago Nunes · Powered by Dev nunes</p>
+	</div>
+
+{% endblock %}
