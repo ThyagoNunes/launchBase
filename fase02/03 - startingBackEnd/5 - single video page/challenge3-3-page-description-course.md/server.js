@@ -2,7 +2,7 @@ const express = require ('express')
 const nunjucks = require ('nunjucks')
 
 const server = express()
-const about = require('./data')    /* < ASSIM  */
+const courses = require('./courses')   
 
 server.set("view engine",".njk")
 server.use(express.static("public"))
@@ -14,8 +14,14 @@ nunjucks.configure('views',{
 
 server.get('/', function(req, res){
 
-    return res.render("about", { about } )      /* < ASSIM  */
+    return res.render("courses", { courses } )     
 })
+
+server.get("/:id", function(req, res) {
+  const id = req.params.id;
+
+  return res.render(`${id}`, { courses} );
+});
 
 server.use(function(req, res) {
     res.status(404).render("not-found");

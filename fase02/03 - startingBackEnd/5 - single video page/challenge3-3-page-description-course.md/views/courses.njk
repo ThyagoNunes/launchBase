@@ -2,7 +2,6 @@
 
 {% block head %}
     <title>Content - Rocketseat</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -11,15 +10,15 @@
 
     <section class="cards">
 
-        {% for link in about.links %}
-        <div class="card" id="{{link.name}}">
+        {% for link in courses.links %}
+        <div class="card" id="{{link.id}}">
 
             <div class="img-content" >
-                <img src="{{link.url}}" alt="Imagem do curso {{link.name}}">
+                <img src="{{link.url}}" alt="Imagem do curso {{link.id}}">
             </div>
 
             <div class="card-content">
-                <p class="about-content">{{link.name}}</p>
+                <p class="courses-content">{{link.id}}</p>
             </div>
 
             <div class="card-info">
@@ -32,7 +31,7 @@
 
     </section>
 
-    <div class="modal-overlay">
+   {#  <div class="modal-overlay">
 
         <div class="modal">
 
@@ -53,7 +52,7 @@
                 <iframe src="" frameborder="0"></iframe>
             </div>
 
-        </div>
+        </div> #}
 
     </div>
 
@@ -64,3 +63,7 @@
     <script src="script.js"></script>
 
 {% endblock %}
+
+
+   
+{#  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"> #}

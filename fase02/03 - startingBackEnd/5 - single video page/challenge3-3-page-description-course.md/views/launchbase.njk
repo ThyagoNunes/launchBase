@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <title>{{ courses.links[1].id }}</title>
+{% endblock %}
+
+
+{% block content %}
+   {% for link in courses.links %}
+
+    {% if link.id == "launchbase" %} 
+
+        <div class="wrapper-courses-page">
+            <img id="launchbase" src="{{ link.url }}" alt="Imagem do curso {{link.id}}">
+            <p>{{link.description}} For more information, click <a id="launchbase" href="{{link.url_site}}">HERE</a></p>
+            
+        </div>
+
+    {% endif %}
+
+   {% endfor %}
+{% endblock %}
+
+{# nome / url / modules / price / id / description #}      
