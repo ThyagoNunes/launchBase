@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>About</title>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="about">
+
+    <h1 id="first"> {{ about.titleAbout }} </h1>
+    <p id="first"> {{ about.firstParagraph }}</p>
+    <p id="second"> {{ about.secondParagraph }} </p>
+
+    <h2 id="second"> {{ about.titleStarted }} </h2>
+    <p id="third"> {{ about.firstParagraph }}</p>
+    <p id="fourth"> {{ about.secondParagraph }} </p>
+
+    <h2 id="third"> {{ about.titleFinal }} </h2>
+    <p id="fifth"> {{ about.secondParagraph }} </p>
+
+    </div>
+
+{% endblock %}

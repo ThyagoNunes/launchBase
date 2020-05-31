@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Home</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>{{ home.title }}</h1>
+        <p>{{ home.paragraph }}</p>
+        <img src="{{ home.avatar }}" alt="Imagem do {{ home.avatar }}">
+    </div>
+
+    <h1 id="title-cards">{{ home.titleCards }}</h1>
+
+    <div class="recipes">
+
+    {% for recipe in home.recipes %}
+
+        <div class="recipe">
+
+            <div class="recipe-img">
+                <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
+            </div>
+
+            <div class="recipe-info">
+                <p class="name-food" >{{ recipe.titleRecipe }}</p>
+                <p class="make-for">{{ recipe.makeFor }}</p>
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+    </div>
+
+{% endblock %}

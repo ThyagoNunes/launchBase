@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body { 
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+/* === HEADER LAYOU === */
+
+.header { 
+    width: 78%;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+}
+
+.header .logo {
+    position: relative;
+    left: -10px;
+}
+
+.header .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+}
+
+.header .links a{
+    width: 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+/* === WRAPPER HOME === */
+
+#wrapper {
+    width: 80%;
+    height: 398px;
+    margin: 0 auto  ;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+}
+
+#wrapper h1 { 
+    position: absolute;
+    top: 28%;
+    left: 6%;
+    font-size: 32px;
+}
+
+#wrapper p { 
+    position: absolute;
+    top: 45%;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 28px;
+    left: 6%;
+
+}
+
+#wrapper img { 
+    position: absolute;
+    right: 12%;
+    top: 23%;
+}
+
+/* === TITTLE CARD HOME === */
+
+#title-cards { 
+    position: relative;
+    top: 80px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+/* === RECIPES HOME === */
+
+.recipes { 
+    top: 100px;
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    align-items: center;
+}
+
+.recipe {
+    position: relative;
+}   
+
+.recipe-img img {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+.recipe-info { 
+    width: 180px;
+}
+
+.recipe-info .name-food {
+    font-size: 18px;
+    line-height: 28px;
+    width: 200px;
+
+}
+
+.recipe-info .make-for {
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #EEEEEE;
+    position: relative;
+    top: 250px;
+    padding: 30px;
+}
+
+.footer p{ 
+    width: 100%;
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* === ABOUT === */
+.about {
+    width: 79%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+.about h1#first{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    position: relative;
+}
+
+.about p#first{
+    font-size: 19px;
+    line-height: 29px;
+    position: relative;
+    top: 5px;
+}
+
+.about p#second{
+    font-size: 19px;
+    line-height: 29px;
+    position: relative;
+    top: 27.5px;
+}
+
+.about h2#second {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    top: 40px;
+    position: relative;
+}
+
+.about p#third{
+    font-size: 19px;
+    line-height: 29px;
+    position: relative;
+    top: 40.25px;
+}
+
+.about p#fourth{
+    font-size: 19px;
+    line-height: 29px;
+    position: relative;
+    top: 60.25px;
+}
+
+.about h2#third {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    top: 70px;
+    position: relative;
+}
+.about p#fifth{
+    font-size: 19px;
+    line-height: 29px;
+    position: relative;
+    top: 80.25px;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal { 
+    width: 60%;
+    height: 50%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    border-radius: 16px;
+}
+
+.modal a {
+    color: black;
+    position: absolute;
+    font-size: 25px;
+    opacity: 0.8;
+    width: 180px;
+    margin: 0 auto;
+    bottom: 15%;
+    right: 41%;
+    cursor: pointer;
+}
+
+.modal-overlay.active{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+/* === recipes === */
+
+.card-recipes { 
+    top: 100px;
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    align-items: center;
+}
+
+.card-recipe {
+    position: relative;
+}   
+
+.card-recipe-img img {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card-recipe-info { 
+    width: 180px;
+}
+
+.card-recipe-info .name-food {
+    font-size: 18px;
+    line-height: 28px;
+    width: 200px;
+
+}
+
+.card-recipe-info .make-for {
+    font-size: 14px;
+}
+
+iframe { 
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}

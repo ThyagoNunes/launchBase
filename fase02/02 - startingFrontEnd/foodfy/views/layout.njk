@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+
+    {% block head %}
+        <title>Home</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="style.css">
+{#     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> #}
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+        <a href="/"> <img src="../assets/logo.png" class="media-object img-responsive img-thumbnail"></a>       
+        </div>
+
+        <div class="links">
+            <a href="/about">Sobre</a>
+            <a href="/recipes">Recipes</a>
+        </div>
+
+    </header>    
+
+    {% block content %} {% endblock %}
+
+
+    {% block footer %}
+
+    <div class="footer">
+        <p>© 2020 Thyago Nunes · Powered by Dev nunes</p>
+    </div>
+
+    {% endblock %}
+
+
+</body>
+
+</html>

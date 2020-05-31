@@ -1,0 +1,60 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Recipes</title>
+
+{% endblock %}
+
+{% block content %}
+
+ <div class="card-recipes">
+
+    {% for recipe in recipes %}
+
+        <div class="card-recipe" id=" {{ recipe.avatarRecipe }} ">
+
+            <div class="card-recipe-img">
+                <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
+            </div>
+
+            <div class="card-recipe-info">
+                <p class="card-name-food" >{{ recipe.titleRecipe }}</p>
+                <p class="card-make-for">{{ recipe.makeFor }}</p>
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>
+
+{% for recipe in recipes %}
+    <div class="modal-overlay">
+
+
+        <div class="modal">
+            
+            <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
+            <p class="name-food" >{{ recipe.titleRecipe }}</p>
+            <p class="make-for">{{ recipe.makeFor }}</p>        
+            <a class="close-modal">Fechar receita</a>
+
+            </iframe>
+
+        </div>
+
+    </div>
+{% endfor %}
+
+
+<script src="scripts.js"> </script>
+
+{% endblock %}
+
+
+
+
+{#         <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
+        <p class="name-food" >{{ recipe.titleRecipe }}</p>
+        <p class="make-for">{{ recipe.makeFor }}</p> #}
