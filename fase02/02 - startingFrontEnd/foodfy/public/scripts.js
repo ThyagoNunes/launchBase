@@ -3,9 +3,14 @@ const recipes = document.querySelectorAll('.card-recipe')
 
 for (let recipe of recipes) {
     recipe.addEventListener('click', function(){
-        const getId = recipe.getAttribute("id")
+        const getPhoto = recipe.getAttribute("id")
+        const getTitle = recipe.titleRecipe.getAttribute("id")
+        const getMaker = recipe.makeFor.getAttribute("id")
         modalOverlay.classList.add('active');
-        modalOverlay.querySelector('iframe').src = `${getId}`
+        modalOverlay.querySelector('iframe').src = `${getPhoto}`
+        modalOverlay.querySelector('iframe').src = `${getTitle}`
+        modalOverlay.querySelector('iframe').src = `${getMaker}`
+
     })
 }
 
