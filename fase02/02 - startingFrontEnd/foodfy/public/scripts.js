@@ -2,15 +2,16 @@ const modalOverlay = document.querySelector('.modal-overlay')
 const recipes = document.querySelectorAll('.card-recipe')
 
 for (let recipe of recipes) {
+    
     recipe.addEventListener('click', function(){
         const getPhoto = recipe.getAttribute("id")
-        const getTitle = recipe.titleRecipe.getAttribute("id")
-        const getMaker = recipe.makeFor.getAttribute("id")
-        modalOverlay.classList.add('active');
-        modalOverlay.querySelector('iframe').src = `${getPhoto}`
-        modalOverlay.querySelector('iframe').src = `${getTitle}`
-        modalOverlay.querySelector('iframe').src = `${getMaker}`
+        const getTitle = recipe.getElementsByClassName("title")
+        const getMake = recipe.getElementsByClassName("make")
 
+        modalOverlay.classList.add('active');
+        const title = document.querySelector('.card-name-food')
+        modalOverlay.querySelector('iframe').src = `${getPhoto}` 
+        modalOverlay.querySelector('iframe').src = `${getTitle}` 
     })
 }
 

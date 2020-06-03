@@ -208,25 +208,57 @@ body {
 
 .card-recipes { 
     top: 100px;
-    width:80%;
+    width: 1500px;
+    min-width: 1300px;
     margin: 0 auto;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2%;
+    gap: 20px;
     align-items: center;
+    
 }
 
 .card-recipe {
     position: relative;
 }   
-
-.card-recipe-img img {
-    width: 450px;
-    height: 200px;
+.card-recipe-img {
+    height: 100%;
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
+}
+
+
+.card-recipe-img img {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+/* .card-img-active {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+    visibility: hidden;
+}
+ */
+
+.card-img-active img {
+    width: 28%;
+    height: 20%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+
+
+p.title {
+    width: 250px;
 }
 
 .card-recipe-info { 
@@ -257,8 +289,8 @@ body {
 }
 
 .modal { 
-    width: 55%;
-    height: 50%;
+    width: 30%;
+    height: 40%;
     background-color: #FFFFFF;
     margin: 0 auto;
     position: relative;
@@ -266,21 +298,35 @@ body {
     border-radius: 16px;
 }
 
+
 .modal a {
+    color: black;
+    position: relative;
+    font-size: 25px;
+    opacity: 0.8;
+    width: 160px;
+    top: 85%;
+    display: grid;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.modal p {
     color: black;
     position: absolute;
     font-size: 25px;
     opacity: 0.8;
     width: 180px;
     margin: 0 auto;
-    bottom: 15%;
+    bottom: 17%;
     right: 41%;
     cursor: pointer;
 }
 
 .content { 
     width: 600px;
-    height: 280px;
+    min-height: 280px;
+    display: grid;
     margin: 0 auto;
     position: relative;
     border-radius: 40px;
@@ -289,9 +335,8 @@ body {
 iframe { 
     width: 100%;
     height: 100%;
-    top: 10%;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     border-radius: 16px;
 }
 
@@ -305,12 +350,3 @@ iframe {
     visibility: visible;
     opacity: 1;
 }
-
-
-
-/* .content {
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    margin: 0 auto;
-} */

@@ -19,8 +19,8 @@
             </div>
 
             <div class="card-recipe-info">
-                <p id="title" class="card-name-food" >{{ recipe.titleRecipe }}</p>
-                <p id="make" class="card-make-for">{{ recipe.makeFor }}</p>
+                <p class="title" class="card-name-food" >{{ recipe.titleRecipe }}</p>
+                <p class="make" class="card-make-for">{{ recipe.makeFor }}</p>
             </div>
 
         </div>
@@ -31,17 +31,19 @@
 
     <div class="modal-overlay">
 
-        <div class="modal">      
+        <div class="modal">   
+
             <a class="close-modal">Fechar receita</a>
-            
-            <div class="content">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
+
+                <div class="content">
+
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
 
         </div>
-        
-    </div>
 
+    
+    </div>
 
 
 <script src="scripts.js"> </script>
@@ -54,3 +56,7 @@
 {#         <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
         <p class="name-food" >{{ recipe.titleRecipe }}</p>
         <p class="make-for">{{ recipe.makeFor }}</p> #}
+
+
+{# <p id="title" class="card-name-food" >{{ recipes.titleRecipe }}</p>
+<p id="make" class="card-make-for">{{ recipes.makeFor }}</p> #}
