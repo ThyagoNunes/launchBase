@@ -104,7 +104,7 @@ body {
 }   
 
 .recipe-img img {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
@@ -216,19 +216,24 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
+}
+
+.card-recipes .active { 
+    top: 100px;
+    width: 300px;
+    min-width: 150px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
     
 }
 
 .card-recipe {
     position: relative;
 }   
-.card-recipe-img {
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 15px;
-}
-
 
 .card-recipe-img img {
     width: 100%;
@@ -238,15 +243,6 @@ body {
     border-radius: 15px;
 }
 
-/* .card-img-active {
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 15px;
-    visibility: hidden;
-}
- */
-
 .card-img-active img {
     width: 28%;
     height: 20%;
@@ -254,8 +250,6 @@ body {
     position: relative;
     border-radius: 15px;
 }
-
-
 
 p.title {
     width: 250px;
@@ -289,15 +283,14 @@ p.title {
 }
 
 .modal { 
-    width: 30%;
-    height: 40%;
+    width: 34%;
+    height: 45%;
     background-color: #FFFFFF;
     margin: 0 auto;
     position: relative;
     top: 25%;
     border-radius: 16px;
 }
-
 
 .modal a {
     color: black;
@@ -336,7 +329,7 @@ iframe {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
     border-radius: 16px;
 }
 
@@ -350,3 +343,6 @@ iframe {
     visibility: visible;
     opacity: 1;
 }
+/* content / iframe */
+
+/* cobalt / cinec */

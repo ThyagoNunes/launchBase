@@ -5,13 +5,12 @@ for (let recipe of recipes) {
     
     recipe.addEventListener('click', function(){
         const getPhoto = recipe.getAttribute("id")
-        const getTitle = recipe.getElementsByClassName("title")
+        const getTitle = recipe.getElementsByClassName(".title")
         const getMake = recipe.getElementsByClassName("make")
 
         modalOverlay.classList.add('active');
         const title = document.querySelector('.card-name-food')
         modalOverlay.querySelector('iframe').src = `${getPhoto}` 
-        modalOverlay.querySelector('iframe').src = `${getTitle}` 
     })
 }
 
