@@ -4,84 +4,84 @@ module.exports = [
             avatarRecipe: "../assets/burger.png",
             titleRecipe: "Triplo bacon burguer",
             makeFor: "por Thyago Nunes",
-            id: "burger",
+            id: "burger1",
         },
                 
         {
             avatarRecipe: "../assets/pizza.png",
             titleRecipe: "Pizza 4 estações",
             makeFor: "por Thyago Nunes",
-            id: "pizza",
+            id: "pizza1",
         },
                 
         {
             avatarRecipe: "../assets/espaguete.png",
             titleRecipe: "Espaguete ao alho",
             makeFor: "por Thyago Nunes",
-            id: "espaguete",
+            id: "espaguete1",
         },
                 
         {
             avatarRecipe: "../assets/lasanha.png",
             titleRecipe: "Lasanha mac n' cheese",
             makeFor: "por Thyago Nunes",
-            id: "lasanha",
+            id: "lasanha1",
         },
                 
         {
             avatarRecipe: "../assets/doce.png",
             titleRecipe: "Docinhos pão-do-céu",
             makeFor: "por Thyago Nunes",
-            id: "doce",
+            id: "doce1",
         },
                 
         {
             avatarRecipe: "../assets/asinhas.png",
             titleRecipe: "Asinhas de frango ao barbecue",
             makeFor: "por Thyago Nunes",
-            id: "asinha",
+            id: "asinha1",
         },
                 
         {
             avatarRecipe: "../assets/burger.png",
             titleRecipe: "Triplo bacon burguer",
             makeFor: "por Thyago Nunes",
-            id: "burger",
+            id: "burger2",
         },
                 
         {
             avatarRecipe: "../assets/pizza.png",
             titleRecipe: "Pizza 4 estações",
             makeFor: "por Thyago Nunes",
-            id: 2,
+            id: "pizza2",
         },
                 
         {
             avatarRecipe: "../assets/espaguete.png",
             titleRecipe: "Espaguete ao alho",
             makeFor: "por Thyago Nunes",
-            id: "espaguete",
+            id: "espaguete2",
         },
                 
         {
             avatarRecipe: "../assets/lasanha.png",
             titleRecipe: "Lasanha mac n' cheese",
             makeFor: "por Thyago Nunes",
-            id: "lasanha",
+            id: "lasanha2",
         },
                 
         {
             avatarRecipe: "../assets/doce.png",
             titleRecipe: "Docinhos pão-do-céu",
             makeFor: "por Thyago Nunes",
-            id: "doce",
+            id: "doce2",
         },
                 
         {
             avatarRecipe: "../assets/asinhas.png",
             titleRecipe: "Asinhas de frango ao barbecue",
             makeFor: "por Thyago Nunes",
-            id: "asinha",
+            id: "asinha2",
         },
     
 ]

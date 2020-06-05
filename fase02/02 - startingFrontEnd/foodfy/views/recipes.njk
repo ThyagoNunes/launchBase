@@ -12,7 +12,7 @@
 
     {% for recipe in recipes %}
 
-        <div class="card-recipe" id=" {{ recipe.avatarRecipe }} ">
+        <div class="card-recipe" id=" {{ recipe.avatarRecipe }} " class=" {{ recipe.id }} ">
 
             <div class="card-recipe-img">
                 <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
@@ -29,11 +29,24 @@
 
 </div>
 
+
     <div class="modal-overlay">
-         <div class="modal">   
+
+         <div class="modal" id= " {{ recipe.id }} " > 
+
+            {% for recipe in recipes %}
+
+                <div class="card-recipe-info">
+                    <p class="title" class="card-name-food" >{{ recipe.titleRecipe }}</p>
+                    <p class="make" class="card-make-for">{{ recipe.makeFor }}</p>
+                </div>
+
+            {% endfor %}
+
             <a class="close-modal">Fechar receita</a>
                 <div class="content">
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe src="" frameborder="0">     
+                    </iframe>
                 </div>
          </div>
     </div>
