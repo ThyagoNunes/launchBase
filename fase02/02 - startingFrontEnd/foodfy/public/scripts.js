@@ -16,7 +16,10 @@ for (let info of infos) {
         info.addEventListener('click', function(){
         const getTitle = recipe.getAttribute("id")
         modalOverlay.classList.add('active');
-        modalOverlay.querySelector('iframe').src = `${getPhoto}` 
+        modalOverlay.querySelector('iframe').src = `${getPhoto}`
+
+/* today is a day */
+ 
     })
 }
 
