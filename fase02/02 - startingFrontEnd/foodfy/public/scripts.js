@@ -4,17 +4,15 @@ const recipes = document.querySelectorAll('.card-recipe')
 for (let recipe of recipes) {
         recipe.addEventListener('click', function(){
         const getPhoto = recipe.getAttribute("id")
-/*         const nameFood = recipe.querySelector('.title')
+/*      const nameFood = recipe.querySelector('.title')
         const makeFor = recipe.querySelector('.make')  */
         modalOverlay.classList.add('active');
         modalOverlay.querySelector('iframe').src = `${getPhoto}` 
         document.querySelector('.title').innerHTML = `${nameFood}`;
         document.querySelector('.make').innerHTML = `${makeFor}`;
-        /* nameFood.classList.add('active'); */
         
     })
 }
-
 document.querySelector('.close-modal').addEventListener('click',function(){
     modalOverlay.classList.remove('active');
 })
