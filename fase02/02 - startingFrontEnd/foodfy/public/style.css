@@ -298,7 +298,7 @@ p.title {
     font-size: 25px;
     opacity: 0.8;
     width: 160px;
-    top: 85%;
+    top: 75%;
     display: grid;
     margin: 0 auto;
     cursor: pointer;
@@ -307,12 +307,10 @@ p.title {
 .modal p {
     color: black;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     opacity: 0.8;
     width: 180px;
     margin: 0 auto;
-    bottom: 17%;
-    right: 41%;
     cursor: pointer;
 }
 
@@ -320,7 +318,7 @@ p.title {
     width: 600px;
     min-height: 280px;
     display: grid;
-    margin: 0 auto;
+    margin: -6% auto;
     position: relative;
     border-radius: 40px;
 }
@@ -342,6 +340,28 @@ iframe {
     position: fixed;
     visibility: visible;
     opacity: 1;
+}
+
+.modal-recipe-info {
+    display: grid;
+    position: relative;
+    top: 330px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-recipe-info .title {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.modal-recipe-info .make {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+
 }
 /* content / iframe */
 
