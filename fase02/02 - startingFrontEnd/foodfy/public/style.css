@@ -298,7 +298,7 @@ p.title {
     font-size: 25px;
     opacity: 0.8;
     width: 160px;
-    top: 75%;
+    top: 80%;
     display: grid;
     margin: 0 auto;
     cursor: pointer;
@@ -321,6 +321,7 @@ p.title {
     margin: -6% auto;
     position: relative;
     border-radius: 40px;
+    top: -14px;
 }
 
 iframe { 

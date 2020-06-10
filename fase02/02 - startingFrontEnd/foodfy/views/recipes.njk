@@ -18,11 +18,6 @@
                 <img src=" {{ recipe.avatarRecipe }} " alt="Imagem de {{ recipe.avatarRecipe }}">
             </div>
 
-            <div class="card-recipe-info">
-                <p class="title" >{{ recipe.titleRecipe }}</p>
-                <p class="make" >{{ recipe.makeFor }}</p>
-            </div>
-
         </div>
 
     {% endfor %}
@@ -35,8 +30,8 @@
 
 
             <div class="modal-recipe-info">
-                <p class="title" >{{ recipes[0].titleRecipe }}</p>
-                <p class="make" >{{ recipes[0].makeFor }}</p>
+                <p class="title" >{{ recipe.titleRecipe }}</p>
+                <p class="make" >{{ recipes.makeFor }}</p>
             </div>
 
             <a class="close-modal">Fechar receita</a>
