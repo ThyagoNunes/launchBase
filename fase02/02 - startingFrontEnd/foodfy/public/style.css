@@ -45,7 +45,7 @@ body {
 #wrapper {
     width: 80%;
     height: 398px;
-    margin: 0 auto  ;
+    margin: 0 auto;
     background-color: #FBDFDB;
     border-radius: 30px;
     position: relative;
@@ -104,7 +104,7 @@ body {
 }   
 
 .recipe-img img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
@@ -237,7 +237,7 @@ body {
 
 .card-recipe-img img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
