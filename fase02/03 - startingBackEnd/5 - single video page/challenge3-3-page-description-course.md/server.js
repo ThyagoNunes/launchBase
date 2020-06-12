@@ -18,7 +18,7 @@ server.get('/', function(req, res){
 })
 
 server.get("/:id", function(req, res) {
-  const id = req.params.id;
+  const id = req.params.id;   // req.params.id ( store id )
 
   return res.render(`${id}`, { courses} );
 });
