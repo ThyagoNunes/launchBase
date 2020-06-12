@@ -27,13 +27,6 @@ server.use(function(req, res) {
     res.status(404).render("not-found");
   });
 
-server.listen(process.env.PORT || 3000)
-
- 
-
-
-
-
 
 server.get('/', function(req, res){
 
@@ -48,6 +41,4 @@ server.get('/', function(req, res){
     return res.render("about", { about } )
 })
 
-
-
-
+server.listen(process.env.PORT || 3000)
