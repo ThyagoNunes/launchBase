@@ -9,7 +9,8 @@ server.set("view engine", "njk");          /* SET ENGINE FOR HTML */
 
 nunjucks.configure("views", {               /* CONFIGURE NUNJUCKS */
   express: server, 
-  autoescape: false
+  autoescape: false,
+  noCache: true,
 });
 
 server.get("/", function (req, res) {
