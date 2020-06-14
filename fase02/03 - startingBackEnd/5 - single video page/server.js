@@ -30,7 +30,7 @@ server.get("/video", function(req, res){
     return video.id == id
   })
 
-  if(!video) {
+  if(!video) { 
     return res.send("Video not found")
   }
 
