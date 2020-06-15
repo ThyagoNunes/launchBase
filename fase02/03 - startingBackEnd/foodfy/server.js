@@ -28,19 +28,26 @@ server.get("/recipes", function(req, res){
     return res.render("recipes", { recipes })
 })
 
-
-server.get("/recipe", function(req, res){
-    const id = req.query.id
-  
-    const recipe = recipes.find(function(recipe){
-      return recipe.id == id
-    })
-  
-    if(!recipe) { 
-      return res.send("recipe not found")
-    }
-  
-    return res.render("recipe", { recipes : recipe })
-  })
+  server.get("/recipes/:index", function (req, res) {
+    const recipes = [...]; // Array de receitas carregadas do data.js
+    const recipeIndex = req.params.index;
+   
+    console.log(receipts[recipeIndex]);
+  })  
 
 server.listen(process.env.PORT || 3000) 
+
+
+/* server.get("/recipe", function(req, res){
+  const id = req.query.id
+
+  const recipe = recipes.find(function(recipe){
+    return recipe.id == id
+  })
+
+  if(!recipe) { 
+    return res.send("recipe not found")
+  }
+
+  return res.render("recipe", { recipes : recipe })
+}) */
