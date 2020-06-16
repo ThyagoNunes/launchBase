@@ -29,10 +29,13 @@ server.get("/recipes", function(req, res){
 })
 
   server.get("/recipes/:index", function (req, res) {
-    const recipes = [...]; // Array de receitas carregadas do data.js
+    const recipes = [recipes.find(function(recipe){
+        return recipe.id == id
+      })
+    ]; // Array de receitas carregadas do data.js
     const recipeIndex = req.params.index;
    
-    console.log(receipts[recipeIndex]);
+    console.log(recipes[recipeIndex]);
   })  
 
 server.listen(process.env.PORT || 3000) 

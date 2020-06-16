@@ -4,7 +4,7 @@ const recipes = document.querySelectorAll('.card-recipe')
 for ( let recipe of recipes ) {
     recipe.addEventListener("click", function(){
         const recipeId = recipe.getAttribute("id")
-        window.location.href = `/video?id=${videoId}`
+        window.location.href = `/recipes/:${recipeId}`
     })
 }
 
