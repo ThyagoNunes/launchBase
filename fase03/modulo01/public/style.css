@@ -1,0 +1,414 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap";
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #1f2633;
+	color: black;
+}
+
+/* ==========     HEADER     ========== */
+
+.link_page {
+	width: 250px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding: 0;
+	margin: 0 auto;
+	top: 10px;
+	position: relative;
+}
+
+.link_page a {
+	border: 3px solid black;
+	padding: 10px;
+	text-decoration: none;
+	position: relative;
+	border-radius: 10px;
+	text-align: center;
+	color: black;
+    font-weight: 900;
+	background-color: white;   
+}
+
+.link_page a:hover {
+	color: white;
+	transition: color 200ms;
+	background-color: grey;
+	border: 3px solid black;
+	font-weight: 900;
+	transition: 400ms;
+	filter: contrast(200%);
+}
+
+/* ==========     WRAPPER     ========== */
+
+#wrapper {
+	padding: 32px;
+	top: 100px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#wrapper img {
+	border-radius: 50%;
+	width: 220px;
+	text-align: center;
+	position: relative;
+	border: 4px solid white;
+}
+
+#wrapper h1 {
+	font-size: 35px;
+	top: 80px;
+	position: relative;
+	color: whitesmoke;
+}
+
+#wrapper p {
+	font-size: 28px;
+	top: 120px;
+	position: relative;
+	color: whitesmoke;
+}
+
+#wrapper p.desc {
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	top: 150px;
+	font-style: italic;
+}
+
+
+/* ==========     SOCIAL MIDIAS     ========== */
+
+div.links_social_midia {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.links_social_midia img {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+	border-radius: 100px;
+	border: 5px solid black;
+}
+
+.links_social_midia img:hover {
+    background: grey;
+    border-radius: 100px;
+	filter: brightness(120%);
+	transition: 500ms;
+	position: relative;
+	width: 60px;
+	top: -10px;
+
+}
+
+.links_social_midia a {
+    text-decoration: none;
+}
+
+/* ==========     FOOTER     ========== */
+
+.footer { 
+    width: auto;
+    text-align: center;
+    top: 450px;
+	position: relative;
+	color: white;
+}
+
+
+/* === ABOUT === */
+
+body#about { 
+	background-color: black;
+	filter: brightness(95%);
+	position: relative;
+	top: 50px;
+	left: 150px;
+
+}
+/* === VIDEOS === */
+
+.title-page { 
+	text-align: center;
+	color: white;
+	width: 200px;
+	margin: 0 auto;
+	font-weight: bold;
+	top: 80px;
+	position: relative;
+}
+
+/* ==========     CARDS     ========== */
+
+.cards {
+	max-width: 930px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	align-items: center;
+	border-radius: 5%;
+	position: relative;
+	top: 100px;
+	cursor: pointer;
+}
+
+/* ==========     CARD     ========== */
+
+.card { 
+	background: grey;
+	display: grid;
+	position: relative;
+}
+
+/* ==========     CARD-IMAGE     ========== */
+
+.card_image_container img {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* ==========     CARD-CONTENT     ========== */
+
+.card_content {
+	text-align: left;
+}
+
+.card_content p {
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+
+.card_content,
+.card_info {
+	padding: 10px;
+}
+
+/* ==========     CARD     ========== */
+
+.card_info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+
+}
+
+.card_time {
+	background: white;
+	border-radius: 20px;
+	padding: 1px;
+	font-size: 15px;
+	color: black;
+	font-weight: 900;
+	margin-right: 10px;
+	text-align: center;
+	width: 110px;
+
+}
+
+.card_price {
+	background: white;
+	filter: brightness(85%);
+	border-radius: 20px;
+	padding: 1px;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	font-weight: 900;
+	align-items: center;
+	width: 100px;
+}
+
+/* ==========     MODAL     ========== */
+
+.modal-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%; 
+	position: fixed;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.modal { 
+	background-color: white;
+	width: 90%;
+	height: 90%;
+	margin: 5vh auto;
+	position: relative	;
+}
+
+ .modal .close-modal { 
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	cursor: pointer;
+}
+
+/* ==========     IFRAME     ========== */
+
+iframe { 
+	width: 100%;
+	height: 95%;
+	position: absolute;
+	top: 0%
+}
+
+/* ==========     MODAL ACTIVE     ========== */
+
+.modal-overlay.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* ==========     PAGE NOT-FOUND     ========== */
+
+.page-not-found img{ 
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+/* ==========     FEATURED     ========== */
+
+/* .featured-wrapper.card_image_container { 
+	position: relative;
+}
+
+.featured { 
+	position: absolute;
+	background: #f7d05f;
+	color: #111;
+	padding: 2px 8px;
+	right: 5px;
+	border-radius: 16px;
+	padding: 2px 8px;
+	top: -10px;
+} */
+
+/* ==========     VIDEO PAGE     ========== */
+
+.video {
+	margin: 0 auto;
+	max-width: 800px;
+	position: relative;
+	top: 100px;
+}
+
+.video .card_video_container {
+	position: relative;
+	padding-top: 62.5%;
+}
+
+
+.video .card { 
+	height: 620px;
+	position: relative;
+}
+
+.video .card_content p {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: 15px;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.video .card_content,
+.video .card_info {
+	padding: 10px;
+}
+
+/* ==========     CARD     ========== */
+
+.videos .cards { 
+	border-radius: 50px;
+
+}
+
+.video .card { 
+	background: grey;
+	display: grid;
+	position: relative;
+} 
+
+#wrapper .titleVideo {
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	top: 0px;
+	color: white;
+}
+
+.video .card_content p{ 
+	color: black;
+}
+
+.video .card_info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	align-items: center;
+}
+
+.video .card_time {
+	border-radius: 20px;
+	padding: 1px;
+	font-size: 18px;
+	color: black;
+	font-weight: 900;
+	margin-right: 10px;
+	text-align: center;
+	background-color: white;
+	width: 150px;
+	margin-left: 15px;
+}
+
+.video .card_price { 
+	background: white;
+	filter: brightness(85%);
+	border-radius: 20px;
+	padding: 1px;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	font-weight: 900;
+	width: 250px;
+	margin-left: 100px;
+}
+
+.video .card_video_container iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%
+}

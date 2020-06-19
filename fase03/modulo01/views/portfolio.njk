@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<title>Portfolio -  Thyago Nunes</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %} 
+
+{% block content %}
+
+	<h1 class="title-page">Vídeos</h1>
+	
+	<section class="cards">
+
+		{%for portfolio in portfolios %}
+		<div class="card" id="{{portfolio.id}}">
+			<div class="card_image_container {{ 'featured-wrapper' if portfolio.featured }}" >
+				<img src="https://img.youtube.com/vi/{{portfolio.id}}/0.jpg" alt="Imagem de {{portfolio.titleVideos}}">
+				{% if portfolio.featured %}
+					<div class="featured">Featured</div>
+				{% endif %}
+			</div>
+			<div class="card_content">
+				<p>{{portfolio.titleVideo}}</p>
+			</div>
+			<div class="card_info">
+				<p class="card_time">{{portfolio.duration}}</p>
+				<p class="card_price">{{portfolio.feeling}}</p>
+			</div>
+		</div>
+		{% endfor %}
+
+	</section>
+
+	<script src="/scripts.js"></script>
+
+{% endblock %}
