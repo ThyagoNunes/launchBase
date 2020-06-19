@@ -10,35 +10,35 @@ server.use(express.static("public"))
 server.set("view engine", "njk")
 
 nunjucks.configure("views", {
-    express: server,
-    autoescape: false,
-    noCache: true,
+  express: server,
+  autoescape: false,
+  noCache: true,
 })
 
-server.get('/', function(req, res){
-    return res.render("home", { home : home});
+server.get('/', function (req, res) {
+  return res.render("home", { home: home });
 })
 
-server.get("/about", function(req, res){
-    return res.render('about', { about : about});
+server.get("/about", function (req, res) {
+  return res.render('about', { about: about });
 })
 
-server.get("/recipes", function(req, res){
-    
-    return res.render("recipes", { recipes })
+server.get("/recipes", function (req, res) {
+
+  return res.render("recipes", { recipes })
 })
 
-  server.get("/recipes/:index", function (req, res) {
-    const recipes = [recipes.find(function(recipe){
-        return recipe.id == id
-      })
-    ]; // Array de receitas carregadas do data.js
-    const recipeIndex = req.params.index;
-   
-    console.log(recipes[recipeIndex]);
-  })  
+server.get("/recipes/:index", function (req, res) {
+  const recipes = [recipes.find(function (recipe) {
+    return recipe.id == id
+  })
+  ]; // Array de receitas carregadas do data.js
+  const recipeIndex = req.params.index;
 
-server.listen(process.env.PORT || 3000) 
+  console.log(recipes[recipeIndex]);
+})
+
+server.listen(process.env.PORT || 3000)
 
 
 /* server.get("/recipe", function(req, res){
@@ -48,7 +48,7 @@ server.listen(process.env.PORT || 3000)
     return recipe.id == id
   })
 
-  if(!recipe) { 
+  if(!recipe) {
     return res.send("recipe not found")
   }
 
