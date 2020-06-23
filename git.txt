@@ -1,0 +1,7 @@
+git flow
+
+chore ( starting application / initial commit ) 
+fixed ( bug solved ) 
+feature ( pref.  )
+featured ( ) 
+  

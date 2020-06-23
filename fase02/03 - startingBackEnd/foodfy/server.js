@@ -33,9 +33,7 @@ server.get ("/recipe", function(req, res){
   const id = req.query.id 
 
   const recipe = recipes.find(function(recipe){
-    if (recipe.id == id) {
-      return true
-    } 
+    return recipe.id == id
   })
 
   if (!recipe){
@@ -48,17 +46,3 @@ server.get ("/recipe", function(req, res){
 
 server.listen(process.env.PORT || 3000)
  
-
-/*
-
-server.get("/recipes/:index", function (req, res) {
-  const recipes = [recipes.find(function (recipe) {
-    return recipe.id == id
-  })
-  ]; // Array de receitas carregadas do data.js
-  const recipeIndex = req.params.index;
-
-  console.log(recipes[recipeIndex]);
-})
-
-*/

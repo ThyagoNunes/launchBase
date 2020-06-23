@@ -86,13 +86,15 @@ body {
     font-size: 24px;
 }
 
-/* === RECIPE HOME === */
+/* === RECIPES HOME === */
 
-.recipe { 
+.recipes { 
     top: 100px;
     width:80%;
     margin: 0 auto;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
     align-items: center;
 }
@@ -202,7 +204,7 @@ body {
     position: relative;
     top: 80.25px;
 }
-/* === recipe === */
+/* === recipes === */
 
 .card-recipes { 
     top: 100px;
@@ -216,7 +218,20 @@ body {
     align-items: center;
 }
 
-.card-recipes {
+.card-recipes .active { 
+    top: 100px;
+    width: 300px;
+    min-width: 150px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.card-recipe {
     position: relative;
 }   
 
@@ -226,9 +241,35 @@ body {
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
+
+.card-img-active img {
+    width: 28%;
+    height: 20%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+p.title {
+    width: 250px;
+}
+
+.card-recipe-info { 
+    width: 180px;
+}
+
+.card-recipe-info .name-food {
+    font-size: 18px;
+    line-height: 28px;
+    width: 200px;
+
+}
+
+.card-recipe-info .make {
+    font-size: 14px;
+}
+
 
 iframe { 
     width: 100%;
@@ -237,6 +278,11 @@ iframe {
     position: relative;
     border-radius: 16px;
 }
+
+
+/* content / iframe */
+
+
 
 
 .c-recipe { 
