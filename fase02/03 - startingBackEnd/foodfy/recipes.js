@@ -2,7 +2,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
     title: 'Triplo bacon burger',
-    author: 'Jorge Relato',
+    id: 'burger',
+    author: 'Thyago Nunes',
     ingredients: [
       '3 kg de carne moída (escolha uma carne magra e macia)',
       '300 g de bacon moído',
@@ -25,7 +26,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
     title: 'Pizza 4 estações',
-    author: 'Fabiana Melo',
+    id: 'pizza',
+    author: 'Thyago Nunes',
     ingredients: [
       '1 xícara (chá) de leite',
       '1 ovo',
@@ -52,7 +54,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
     title: 'Asinhas de frango ao barbecue',
-    author: 'Vania Steroski',
+    id: 'asinhas',
+    author: 'Thyago Nunes',
     ingredients: [
       '12 encontros de asinha de galinha, temperados a gosto',
       '2 colheres de sopa de farinha de trigo',
@@ -69,7 +72,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
     title: "Lasanha mac n' cheese",
-    author: 'Juliano Vieira',
+    id: "lasanha",
+    author: 'Thyago Nunes',
     ingredients: [
       'massa pronta de lasanha',
       '400 g de presunto',
@@ -89,7 +93,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
     title: 'Espaguete ao alho',
-    author: 'Júlia Kinoto',
+    id: 'espaguete',
+    author: 'Thyago Nunes',
     ingredients: [
       '1 pacote de macarrão 500 g (tipo do macarrão a gosto)',
       '1 saquinho de alho granulado',
@@ -113,7 +118,8 @@ module.exports = [
   {
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
     title: 'Docinhos pão-do-céu',
-    author: 'Ricardo Golvea',
+    id: 'docinhos',
+    author: 'Thyago Nunes',
     ingredients: [
       '1 kg de batata - doce',
       '100 g de manteiga',

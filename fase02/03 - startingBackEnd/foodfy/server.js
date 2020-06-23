@@ -28,6 +28,29 @@ server.get("/recipes", function (req, res) {
   return res.render("recipes", { recipes })
 })
 
+
+server.get ("/recipe", function(req, res){
+  const id = req.query.id 
+
+  const recipe = recipes.find(function(recipe){
+    if (recipe.id == id) {
+      return true
+    } 
+  })
+
+  if (!recipe){
+    return res.send("Recipe not found")
+  }
+
+  return res.render("recipe", {recipe})
+
+})
+
+server.listen(process.env.PORT || 3000)
+
+
+/*
+
 server.get("/recipes/:index", function (req, res) {
   const recipes = [recipes.find(function (recipe) {
     return recipe.id == id
@@ -38,19 +61,4 @@ server.get("/recipes/:index", function (req, res) {
   console.log(recipes[recipeIndex]);
 })
 
-server.listen(process.env.PORT || 3000)
-
-
-/* server.get("/recipe", function(req, res){
-  const id = req.query.id
-
-  const recipe = recipes.find(function(recipe){
-    return recipe.id == id
-  })
-
-  if(!recipe) {
-    return res.send("recipe not found")
-  }
-
-  return res.render("recipe", { recipes : recipe })
-}) */
+*/

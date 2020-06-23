@@ -86,15 +86,13 @@ body {
     font-size: 24px;
 }
 
-/* === RECIPES HOME === */
+/* === RECIPE HOME === */
 
-.recipes { 
+.recipe { 
     top: 100px;
     width:80%;
     margin: 0 auto;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
     align-items: center;
 }
@@ -204,7 +202,7 @@ body {
     position: relative;
     top: 80.25px;
 }
-/* === recipes === */
+/* === recipe === */
 
 .card-recipes { 
     top: 100px;
@@ -218,20 +216,7 @@ body {
     align-items: center;
 }
 
-.card-recipes .active { 
-    top: 100px;
-    width: 300px;
-    min-width: 150px;
-    margin: 0 auto;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-    
-}
-
-.card-recipe {
+.card-recipes {
     position: relative;
 }   
 
@@ -241,87 +226,8 @@ body {
     margin: 0 auto;
     position: relative;
     border-radius: 15px;
-}
-
-.card-img-active img {
-    width: 28%;
-    height: 20%;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 15px;
-}
-
-p.title {
-    width: 250px;
-}
-
-.card-recipe-info { 
-    width: 180px;
-}
-
-.card-recipe-info .name-food {
-    font-size: 18px;
-    line-height: 28px;
-    width: 200px;
-
-}
-
-.card-recipe-info .make-for {
-    font-size: 14px;
-}
-
-/* === MODAL === */
-
-.modal-overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.modal { 
-    width: 34%;
-    height: 45%;
-    background-color: #FFFFFF;
-    margin: 0 auto;
-    position: relative;
-    top: 25%;
-    border-radius: 16px;
-}
-
-.modal a {
-    color: black;
-    position: relative;
-    font-size: 25px;
-    opacity: 0.8;
-    width: 160px;
-    top: 80%;
     display: grid;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.modal p {
-    color: black;
-    position: absolute;
-    font-size: 20px;
-    opacity: 0.8;
-    width: 180px;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.content { 
-    width: 600px;
-    min-height: 280px;
-    display: grid;
-    margin: -6% auto;
-    position: relative;
-    border-radius: 40px;
-    top: -14px;
+    grid-template-columns: 1fr 1fr;
 }
 
 iframe { 
@@ -333,37 +239,41 @@ iframe {
 }
 
 
-.modal-overlay.active{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-    position: fixed;
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal-recipe-info {
-    display: grid;
+.c-recipe { 
+    top: 100px;
+    width: 1500px;
+    min-width: 1300px;
+    margin: 0 auto;
     position: relative;
-    top: 330px;
-    text-align: center;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
 }
 
-.modal-recipe-info .title {
+.c-recipe {
     position: relative;
+}   
+
+.recipe-img img {
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    width: 250px;
+    position: relative;
+    border-radius: 15px;
 }
 
-.modal-recipe-info .make {
-    position: relative;
-    margin: 0 auto;
-    width: 250px;
+
+
+.recipe-info { 
+    width: 180px;
+}
+
+.recipe-info .name-food {
+    font-size: 18px;
+    line-height: 28px;
+    width: 200px;
 
 }
-/* content / iframe */
 
-/* cobalt / cinec */
+.recipe-info .make {
+    font-size: 14px;
+}

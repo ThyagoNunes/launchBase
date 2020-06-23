@@ -2,35 +2,32 @@
 
 {% block head %}
 
-    <title>Recipes</title>
+    <title>{{recipe.title}}</title>
 
 {% endblock %}
 
 {% block content %}
 
- <div class="card-recipes">
+ <div class="c-recipe">
+ 
 
-    {% for recipe in recipes %}
+        <div class="recipe" id=" {{recipe.id}} ">
 
-        <div class="card-recipe" id=" {{ recipe.title }} ">
-
-            <div class="card-recipe-img">
+            <div class="recipe-img">
                 <img src=" {{ recipe.image }} " alt="Imagem de {{ recipe.image }}">
             </div>
 
-            <div class="card-recipe-info">
+            <div class="recipe-info">
                 <p class="title" >{{ recipe.title }}</p>
                 <p class="make" >{{ recipe.author }}</p>
                 <p class="ingredients" >{{ recipe.ingredients }}</p>
+                <p class="preparo" >{{ recipe.preparation }}</p>
+                <p class="info" >{{ recipe.information }}</p>
+
             </div>
 
-        </div>
-
-    {% endfor %}
+        </div> 
 
 </div>
 
-<script src="scripts.js"> </script>
-
 {% endblock %}
-
