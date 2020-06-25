@@ -28,6 +28,9 @@ server.get("/recipes", function (req, res) {
   return res.render("recipes", { recipes })
 })
 
+/*
+add route recipe for recipes click
+*/
 
 server.get ("/recipe", function(req, res){
   const id = req.query.id 
